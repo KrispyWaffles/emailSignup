@@ -80,7 +80,7 @@ p {
 
 input {
     width: 100%;
-    padding: 0.85rem 0.85rem 0.85rem 0.85rem 2.5rem;
+    padding: 0.85rem 0.85rem 0.85rem 2.5rem;
     background-color: var(--input-bg);
     border: 1px solid var(--border-color);
     color: var(--text-primary);
@@ -91,4 +91,67 @@ input {
 input::placeholder {
     color: var(--text-secondary);
     opacity: 0.7;
+}
+
+
+button {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: var(--primary-color);
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a66ae9;
+    transform: translateY(-2px);
+}
+
+button i {
+    font-size: 0.9rem;
+    transition: transform 0.3 ease;
+
+
+}
+
+button:hover i {
+    transform: translateX(3px);
+}
+
+.benefits {
+    margin-top: flex;
+    text-align: left;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+.benefit-item i {
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+}
+
+
+@media (max-width: 500px) {
+    .signup-container {
+        padding: 2rem 1.5rem;
+    }
 }
